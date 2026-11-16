@@ -1,0 +1,9 @@
+{
+  "name": "bili-digest",
+  "version": "0.1.0",
+  "description": "Turn Bilibili favorites and followed uploaders into a local library of Markdown transcripts, then let an agent triage and digest them.",
+  "author": { "name": "gxxxr-111" },
+  "repository": "https://github.com/gxxxr-111/bili-digest",
+  "license": "MIT",
+  "keywords": ["bilibili", "transcript", "subtitles", "digest", "skill"]
+}

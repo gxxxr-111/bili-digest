@@ -1,0 +1,8 @@
+{
+  "name": "bili-digest",
+  "owner": { "name": "gxxxr-111" },
+  "metadata": { "description": "Bilibili transcripts and catch-up digests for Claude Code.", "version": "0.1.0" },
+  "plugins": [
+    { "name": "bili-digest", "source": "./", "description": "Sync Bilibili favorites and uploaders into Markdown transcripts; triage and digest them with an agent." }
+  ]
+}
