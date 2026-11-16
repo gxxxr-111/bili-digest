@@ -21,6 +21,7 @@ A small tool plus an agent skill: it keeps a local folder of text transcripts fo
 - **Existing options**:
   - bilibili-api-python covers everything but is GPL and heavy.
   - yt-dlp is reportedly blocked by Bilibili since June 2026 (single source).
+  - [Agent-Reach](https://github.com/Panniantong/Agent-Reach) (MIT, ~112k stars) is a read-only multi-platform reader for agents. Its Bilibili channel offers search, trending, video info and first-part subtitles through `bili-cli`, with login by reusing browser cookies. It has no favorites, no uploader tracking, no sync state and no digests. *Added after publishing: research cited it only as a source and missed it as an option.*
   - The existing Bilibili skills and MCP servers don't do continuous favorites and uploader tracking. One stores cookies in plain text, and several are flagged as suspicious.
   - **Decision**: borrow the endpoint knowledge and write a thin client (~300 lines, standard library only).
 - **Target environment** (tested live, 2026-11-17, from outside mainland China):
@@ -71,3 +72,4 @@ A command-line script syncs tracked sources into `~/BiliDigest/library/<bvid>.md
 
 - 2026-11-17: initial version. Live probes overturned the assumption that subtitles are public, so login moved from optional to an ask-first decision.
 - 2026-11-17: added QR login. Verified that, once logged in, AI subtitles come through on 6 of 8 videos and the uploader-list block (-352) is gone.
+- 2026-11-17: added Agent-Reach to the existing options after the user pointed it out. Verdict unchanged: it covers single-video reading, not the favorites/uploader → digest workflow.

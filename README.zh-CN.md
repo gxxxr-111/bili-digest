@@ -58,6 +58,18 @@ cookies.txt         你的登录会话，权限 0600，从不打印
 - 为个人用途读取字幕属于服务条款的灰色地带。本工具不下载视频。
 - AI 字幕有同音字错误，引用原话前请对照视频。
 
+## 相关项目
+
+[Agent-Reach](https://github.com/Panniantong/Agent-Reach) 让智能体能读取约 15 个平台的内容，包括 B 站。如果只是想让智能体读**一个链接**（搜索、热门、视频信息、字幕），用它就行；如果想长期**跟进**收藏夹和 UP 主，用 bili-digest。
+
+| | Agent-Reach | bili-digest |
+|---|---|---|
+| 平台 | 约 15 个 | 仅 B 站 |
+| 单个视频字幕 | ✅（仅第一 P，依赖 `bili-cli`） | ✅（所有分 P，无依赖） |
+| 收藏夹、跟踪 UP 主 | ❌ | ✅ |
+| 增量同步、本地文字库 | ❌ | ✅ |
+| 筛选 + 值得看/略读/跳过摘要 | ❌ | ✅ |
+
 ## 怎么做出来的
 
 用 [look-before-you-build](https://github.com/gxxxr-111/look-before-you-build) 的 preflight skill 设计。设计简报在 [`docs/preflight/`](docs/preflight/)，经验总结在 [`PREFLIGHT.md`](PREFLIGHT.md)。

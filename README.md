@@ -58,6 +58,18 @@ In testing, about 80% of saved videos had usable AI subtitles once logged in. Mo
 - Reading subtitles for personal use is a terms-of-service grey area. This tool doesn't download videos.
 - AI subtitles contain homophone errors. Check quotes against the video.
 
+## Related projects
+
+[Agent-Reach](https://github.com/Panniantong/Agent-Reach) gives agents read access to about 15 platforms, Bilibili included. Use it if you just want an agent to read **one link** (search, trending, video info, subtitles). Use bili-digest if you want to **keep up** with favorites and uploaders over time.
+
+| | Agent-Reach | bili-digest |
+|---|---|---|
+| Platforms | ~15 | Bilibili only |
+| One video's subtitles | ✅ (first part, via `bili-cli`) | ✅ (all parts, no dependencies) |
+| Favorites folders, uploader tracking | ❌ | ✅ |
+| Incremental sync, local library | ❌ | ✅ |
+| Triage + watch/skim/skip digests | ❌ | ✅ |
+
 ## How it was built
 
 Designed with the [look-before-you-build](https://github.com/gxxxr-111/look-before-you-build) preflight skill. The design brief is in [`docs/preflight/`](docs/preflight/), and lessons learned are in [`PREFLIGHT.md`](PREFLIGHT.md).
